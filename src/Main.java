@@ -15,8 +15,10 @@ public class Main {
     }
 
     public static void leapYear(int i) {
-        if ((i % 4 == 0 || i % 400 == 0) && i % 100 != 0) {
+        if (i % 4 == 0 || i % 400 == 0) {
             System.out.println("Год " + i + " — високосный год");
+        } else if (i % 100 == 0) {
+            System.out.println("Год " + i + " — не високосный год");
         } else {
             System.out.println("Год " + i + " — не високосный год");
         }
